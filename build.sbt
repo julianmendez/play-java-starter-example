@@ -19,3 +19,9 @@ libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
 
 // Make verbose tests
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
+
+// This enables the default sbt layout
+// [[https://www.playframework.com/documentation/2.6.x/Anatomy]]
+disablePlugins(PlayLayoutPlugin)
+PlayKeys.playMonitoredFiles ++= (sourceDirectories in (Compile, TwirlKeys.compileTemplates)).value
+
