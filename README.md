@@ -1,8 +1,10 @@
 [<img src="https://img.shields.io/travis/playframework/play-java-starter-example.svg"/>](https://travis-ci.org/playframework/play-java-starter-example)
 
+
 # play-java-starter-example
 
 This is a starter application that shows how Play works.  Please see the documentation at https://www.playframework.com/documentation/latest/Home for more details.
+
 
 ## Running
 
@@ -13,6 +15,7 @@ sbt run
 ```
 
 And then go to http://localhost:9000 to see the running web application.
+
 
 ## Controllers
 
@@ -31,6 +34,7 @@ There are several demonstration files available in this template.
   Shows how to inject a component into a controller and use the component when
   handling requests.
 
+
 ## Components
 
 - `Module.java`:
@@ -46,8 +50,11 @@ There are several demonstration files available in this template.
   An example of a component that starts when the application starts and stops
   when the application stops.
 
+
 ## Filters
 
 - `ExampleFilter.java`:
 
   A simple filter that adds a header to every response.
+
+
